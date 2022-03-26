@@ -4,8 +4,9 @@
 * IWAE: https://arxiv.org/abs/1509.00519
 * ECE: https://arxiv.org/abs/1706.04599
 * FGSM: https://arxiv.org/abs/1412.6572
-Hybrid Model comparable to Ermon/Kuleshovs Model, however, modeled with ResNet-Backbones.
-### Additional Features: 
+
+Implementation of Deep Hybrid Models (DHMs) consisting of a VAE and a ResNet. 
+# Additional Features: 
 * Training Datasets: SVHN, CIFAR10
 * Adversarial Accuracy in the context of FGSM attacks
 * OOD Datasets: SVHN, CIFAR100
