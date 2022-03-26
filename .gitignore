@@ -1,0 +1,15 @@
+# .gitignore
+###################
+
+# Ignore following files/directories
+data/
+.vscode
+base_pytorch.sif
+*.out
+plots/*
+*.ckpt
+csv_runs_test
+code/plot_results.py
+# ... except for this one...
+!.gitignore
+

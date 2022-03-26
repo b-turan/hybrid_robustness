@@ -1,0 +1,14 @@
+Bootstrap: docker
+From: pytorch/pytorch:1.6.0-cuda10.1-cudnn7-runtime
+
+%post
+	export "PATH=/opt/conda/bin:$PATH"
+	conda install pytorch torchvision cudatoolkit=10.2 -c pytorch
+	conda install tensorboard
+	conda install pandas 
+	conda install scipy 
+	conda install scikit-learn
+	conda install scikit-image
+	conda install pyyaml 
+	conda install pytorch-lightning -c conda-forge
+	pip install pytorch-lightning-bolts
