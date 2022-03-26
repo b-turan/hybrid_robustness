@@ -6,6 +6,8 @@
 * FGSM: https://arxiv.org/abs/1412.6572
 
 Implementation of Deep Hybrid Models (DHMs) consisting of a VAE and a ResNet. 
+
+![alt text](architecture_hdgm.png)
 # Additional Features: 
 * Training Datasets: SVHN, CIFAR10
 * Adversarial Accuracy in the context of FGSM attacks
