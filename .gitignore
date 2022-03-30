@@ -10,6 +10,7 @@ plots/*
 *.ckpt
 csv_runs_test
 code/plot_results.py
+datasets
 # ... except for this one...
 !.gitignore
 
