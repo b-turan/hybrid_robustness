@@ -1,16 +1,17 @@
 # Main references
-* Hybrid: Ermon/Kuleshov http://www.cs.cornell.edu/~kuleshov/papers/uai2017.pdf 
-* OOD via p(y|x): https://arxiv.org/abs/1610.02136
-* IWAE: https://arxiv.org/abs/1509.00519
-* ECE: https://arxiv.org/abs/1706.04599
-* FGSM: https://arxiv.org/abs/1412.6572
+* Hybrid Modeling: Ermon/Kuleshov http://www.cs.cornell.edu/~kuleshov/papers/uai2017.pdf 
+* Out-Of-Distribution Detection via p(y|x): https://arxiv.org/abs/1610.02136
+* Importance Weighted Autoencoder: https://arxiv.org/abs/1509.00519
+* Expected Calibration Error: https://arxiv.org/abs/1706.04599
+* Adversrial Robustness: https://arxiv.org/abs/1412.6572
 
-Implementation of Deep Hybrid Models (DHMs) consisting of a VAE and a ResNet. 
+# Abstract of Master's Thesis
+In machine learning, probabilistic models are usually divided into discriminative and generative models. While the former often achieve higher accuracy on large datasets, the latter are designed to incorporate more extensive information. Moreover, the decision whether to use a discriminative or a generative model is a fundamental problem in large-scale applications due to safety-related aspects. To address this problem, we extend upon the results of [Kuleshov and Ermon (2017)] and instantiate Hybrid Discriminative-Generative Models (HDGMs) with Residual Neural Networks (ResNets) and \beta-Variational Autoencoders (VAEs). The resulting Deep Hybrid Models (DHMs) are examined with respect to three robustness metrics relevant to safety, namely the Expected Calibration Error (ECE), the Out-Of-Distribution (OOD) detection, and the adversarial robustness in the context of the Fast Gradient Sign Method (FGSM). We show that DHMs achieve comparable results to supervised ResNets and unsupervised 𝛽-VAEs on well-known image recognition benchmark datasets, that is, Street View House Numbers (SVHN) and CIFAR-10. Furthermore, we demonstrate that DHMs are subject to the same problem as deep generative models in near-OOD detection tasks. This suggests that the multi-conditional
+objective of DHMs does not provide a solution to the problem of assigning higher likelihood values to near-OOD samples associated with deep generative models. And finally, we show that the ability of DHMs to interpolate between discriminative and generative approaches does not lead to significant improvements in ECE and adversarial robustness.
 
-![](hdgm_architecture.png)
-# Additional Features: 
+# Features: 
 * Training Datasets: SVHN, CIFAR10
-* Adversarial Accuracy in the context of FGSM attacks
+* Adversarial Robustness in the context of FGSM attacks
 * OOD Datasets: SVHN, CIFAR100
 * OOD Detection via max p(y|x) as in https://arxiv.org/abs/1610.02136 (using ARUOC)
 * OOD Detection via log p(x) (using AUROC)
