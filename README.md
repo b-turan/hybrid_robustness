@@ -12,7 +12,7 @@ In machine learning, probabilistic models are usually divided into discriminativ
 * Training Datasets: SVHN, CIFAR10
 * Adversarial Robustness in the context of FGSM attacks
 * OOD Datasets: SVHN, CIFAR100
-* OOD Detection via max p(y|x) as in https://arxiv.org/abs/1610.02136 (using ARUOC)
+* OOD Detection via max p(y|x) as in https://arxiv.org/abs/1610.02136 (using AUROC)
 * OOD Detection via log p(x) (using AUROC)
 * Customized VAE with forward hooks for feature level investigation
 * Importance Weighted Autoencoders (IWAE) as in https://arxiv.org/abs/1509.00519
